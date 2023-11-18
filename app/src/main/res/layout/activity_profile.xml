@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofviewprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#075e54">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backbuttonofviewprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white">
+
+            </ImageButton>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/backbuttonofviewprofile"
+                android:text="Your Profile"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewuserimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@id/viewusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="130dp">
+
+
+        <ImageView
+            android:id="@+id/viewuserimageinimageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/logoofviewprofile"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_toLeftOf="@id/viewusername"
+        app:tint="#735959"
+        android:layout_centerInParent="true">
+
+    </ImageView>
+
+
+
+    <EditText
+        android:id="@+id/viewusername"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your name here"
+        android:inputType="textCapWords">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile ?"
+        android:id="@+id/movetoupdateprofile"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/viewusername">
+
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
